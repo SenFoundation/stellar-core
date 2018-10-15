@@ -32,7 +32,7 @@
 #include <fcntl.h>
 #endif
 
-#ifdef __APPLE__
+#if defined (__APPLE__) || defined(__FreeBSD__)
 extern char** environ;
 #endif
 
